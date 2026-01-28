@@ -44,13 +44,11 @@ body {
     transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
-/* Hover Animation */
 .quiz-card:hover {
     transform: translateY(-12px) scale(1.03);
     box-shadow: 0 20px 45px rgba(0,0,0,0.6);
 }
 
-/* Card Heading */
 .quiz-card h2 {
     font-size: 28px;
     margin-bottom: 18px;
@@ -58,20 +56,76 @@ body {
     text-align: center;
 }
 
-/* Image Styling */
 .quiz-card img {
     width: 100%;
     height: 300px;
     object-fit: contain;
     border-radius: 12px;
     border: 2px solid rgba(255,255,255,0.3);
-    transition: transform 0.4s ease, filter 0.4s ease;
+    transition: transform 0.4s ease;
 }
 
-/* Image Hover Effect */
 .quiz-card img:hover {
     transform: scale(1.05);
-    filter: brightness(1.1);
+}
+
+/* ===== SPECIAL SECTION (Different Style) ===== */
+.special-section {
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 35px;
+    background: linear-gradient(135deg, #22c55e, #38bdf8);
+    border-radius: 20px;
+    text-align: center;
+    color: #0f172a;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.5);
+}
+
+.special-section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.special-section img {
+    width: 100%;
+    height: auto;              /* IMPORTANT */
+    max-height: none;          /* REMOVE HEIGHT LIMIT */
+    object-fit: contain;       /* SHOW FULL IMAGE */
+    border-radius: 16px;
+    margin-bottom: 20px;
+    border: 4px solid #ffffff;
+    background-color: #ffffff; /* nice contrast */
+}
+
+
+.special-section p {
+    font-size: 17px;
+    line-height: 1.7;
+    font-weight: 500;
+}
+
+/* Footer */
+footer {
+    margin-top: 60px;
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid rgba(255,255,255,0.2);
+}
+
+footer p {
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: #e5e7eb;
+}
+
+footer a {
+    color: #38bdf8;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
 
 /* Responsive */
@@ -80,11 +134,7 @@ body {
         font-size: 32px;
     }
 
-    .description {
-        font-size: 16px;
-    }
-
-    .quiz-card h2 {
-        font-size: 22px;
+    .special-section h2 {
+        font-size: 26px;
     }
 }
